@@ -1,0 +1,7 @@
+alter table expense
+add column created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+add column updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+alter table expense_split
+add column created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+add column updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;

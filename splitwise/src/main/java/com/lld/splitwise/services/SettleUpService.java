@@ -10,7 +10,9 @@ import com.lld.splitwise.dto.BalanceDTO;
 import com.lld.splitwise.models.Split;
 import com.lld.splitwise.repositories.SplitRepository;
 import com.lld.splitwise.repositories.UserRepository;
+import org.springframework.stereotype.Service;
 
+@Service 
 public class SettleUpService implements ISettleUpService {
 
     private final SplitRepository splitRepository;

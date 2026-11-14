@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
 import com.lld.splitwise.models.Expense;
 import com.lld.splitwise.models.ExpenseGroup;
 import com.lld.splitwise.models.Split;
@@ -14,6 +16,7 @@ import com.lld.splitwise.repositories.SplitRepository;
 import com.lld.splitwise.repositories.UserRepository;
 import com.lld.splitwise.services.SplitStrategies.SplitStrategy;
 
+@Service
 public class ExpenseService implements IExpenseService {
 
     private final ExpenseRepository expenseRepo;

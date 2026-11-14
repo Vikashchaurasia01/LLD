@@ -6,7 +6,9 @@ import com.lld.splitwise.models.ExpenseGroup;
 import com.lld.splitwise.models.User;
 import com.lld.splitwise.repositories.UserRepository;
 import com.lld.splitwise.repositories.ExpenseGroupRepository;
+import org.springframework.stereotype.Service;
 
+@Service 
 public class GroupService implements IGroupService {
 
     private UserRepository userRepository;
